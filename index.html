@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pre-Order Your Custom Car Part</title>
-    <!-- Tailwind CSS for modern, sleek styling -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body class="bg-zinc-950 text-zinc-100 font-sans antialiased">
@@ -36,9 +35,7 @@
                 </a>
             </div>
         </div>
-        <!-- Product Image / Render Placeholder -->
         <div class="relative bg-zinc-900 border border-zinc-800 rounded-xl aspect-video md:aspect-square flex items-center justify-center overflow-hidden shadow-2xl">
-            <!-- Replace with your actual CAD render or prototype photo -->
             <div class="text-center p-6">
                 <p class="text-zinc-600 text-sm uppercase tracking-widest mb-2">[ CAD Render / Prototype Photo ]</p>
                 <p class="text-zinc-500 text-xs">High-resolution 3D preview of the final part</p>
@@ -46,11 +43,9 @@
         </div>
     </header>
 
-    <!-- Fitment & Specs Section -->
+    <!-- Specs Section -->
     <section id="specs" class="bg-zinc-900 border-y border-zinc-800 py-16">
         <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-12">
-            
-            <!-- Fitment Guide -->
             <div>
                 <h2 class="text-2xl font-bold mb-6 text-white flex items-center gap-2">
                     <span class="w-2 h-6 bg-red-500 inline-block rounded-sm"></span> Vehicle Fitment
@@ -58,13 +53,10 @@
                 <div class="bg-zinc-950 border border-zinc-800 rounded-lg p-6">
                     <ul class="space-y-3 text-zinc-300">
                         <li class="flex justify-between border-b border-zinc-800 pb-2">
-                            <strong>Make / Model:</strong> <span>Example Car (Gen 2)</span>
+                            <strong>Make / Model:</strong> <span>Example Car</span>
                         </li>
                         <li class="flex justify-between border-b border-zinc-800 pb-2">
                             <strong>Years:</strong> <span>2018 - 2026</span>
-                        </li>
-                        <li class="flex justify-between border-b border-zinc-800 pb-2">
-                            <strong>Chassis Code:</strong> <span>ZN8 / ZD8</span>
                         </li>
                         <li class="flex justify-between text-amber-400">
                             <strong>Note:</strong> <span>Fits manual transmissions only.</span>
@@ -72,8 +64,6 @@
                     </ul>
                 </div>
             </div>
-
-            <!-- Technical Specifications -->
             <div>
                 <h2 class="text-2xl font-bold mb-6 text-white flex items-center gap-2">
                     <span class="w-2 h-6 bg-red-500 inline-block rounded-sm"></span> Engineering Specs
@@ -84,72 +74,30 @@
                             <strong>Material:</strong> <span>6061-T6 Billet Aluminum</span>
                         </li>
                         <li class="flex justify-between border-b border-zinc-800 pb-2">
-                            <strong>Finish:</strong> <span>Anodized Matte Black / Raw available</span>
-                        </li>
-                        <li class="flex justify-between border-b border-zinc-800 pb-2">
-                            <strong>Weight:</strong> <span>1.8 lbs (35% lighter than stock)</span>
-                        </li>
-                        <li class="flex justify-between">
-                            <strong>Hardware:</strong> <span>Grade 10.9 Bolts Included</span>
+                            <strong>Weight:</strong> <span>1.8 lbs</span>
                         </li>
                     </ul>
                 </div>
             </div>
-
         </div>
     </section>
 
-    <!-- Production Timeline -->
-    <section class="max-w-6xl mx-auto px-4 py-16 text-center">
-        <h2 class="text-3xl font-bold mb-12">Production Roadmap</h2>
-        <div class="grid sm:grid-cols-3 gap-8 text-left max-w-4xl mx-auto">
-            <div class="bg-zinc-900 border border-zinc-800 p-6 rounded-lg relative">
-                <div class="text-zinc-500 font-bold text-sm mb-2">PHASE 1 (Done)</div>
-                <h3 class="text-lg font-bold mb-2 text-emerald-400">✓ R&D & Prototyping</h3>
-                <p class="text-zinc-400 text-sm">3D scanning complete. Stress testing and fitment verification finalized on test mules.</p>
-            </div>
-            <div class="bg-zinc-900 border border-red-900/50 p-6 rounded-lg relative ring-2 ring-red-500/20">
-                <div class="text-red-400 font-bold text-sm mb-2">PHASE 2 (Current)</div>
-                <h3 class="text-lg font-bold mb-2 text-white">Pre-Order Window</h3>
-                <p class="text-zinc-400 text-sm">Collecting orders to finalize batch sizes with the manufacturer. Limited to 100 units.</p>
-            </div>
-            <div class="bg-zinc-900 border border-zinc-800 p-6 rounded-lg relative">
-                <div class="text-zinc-500 font-bold text-sm mb-2">PHASE 3</div>
-                <h3 class="text-lg font-bold mb-2 text-zinc-400">Manufacturing & Shipping</h3>
-                <p class="text-zinc-400 text-sm">Estimated production begins next month. Shipping tracking numbers out by late summer.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Pre-Order Pricing Card -->
+    <!-- Pricing Card -->
     <section id="preorder" class="bg-zinc-900 border-t border-zinc-800 py-16 text-center">
         <div class="max-w-md mx-auto px-4">
             <div class="bg-zinc-950 border border-zinc-800 rounded-2xl p-8 shadow-xl">
                 <h2 class="text-2xl font-bold mb-2">Batch #1 Pre-Order</h2>
-                <p class="text-zinc-400 text-sm mb-6">Lock in the early-bird pricing. Price will increase to retail MSRP once production begins.</p>
-                
+                <p class="text-zinc-400 text-sm mb-6">Lock in early-bird pricing.</p>
                 <div class="mb-6">
                     <span class="text-4xl font-extrabold text-white">$249</span>
-                    <span class="text-zinc-500 line-through text-lg ml-2">$320 MSRP</span>
                 </div>
-
-                <!-- STRIPE LINK BUTTON -->
-                <!-- Replace 'YOUR_STRIPE_CHECKOUT_URL' with your actual Stripe Payment Link -->
-                <a href="https://buy.stripe.com/test_8x2fZ9bndeVke4740SgrS00" target="_blank" class="block w-full bg-red-600 hover:bg-red-700 text-white font-bold py-4 rounded-md transition shadow-lg shadow-red-900/30">
+                <!-- Insert your Stripe Checkout Link below -->
+                <a href="https://buy.stripe.com/test_eVq3cnezpbJ84tx9lcgrS01" target="_blank" class="block w-full bg-red-600 hover:bg-red-700 text-white font-bold py-4 rounded-md transition shadow-lg shadow-red-900/30">
                     Pre-Order via Stripe Checkout
                 </a>
-                
-                <p class="text-zinc-500 text-xs mt-4">
-                    Secure 256-bit encrypted payment. Fully refundable until manufacturing begins.
-                </p>
             </div>
         </div>
     </section>
-
-    <!-- Footer -->
-    <footer class="border-t border-zinc-800 py-8 text-center text-zinc-600 text-xs">
-        <p>&copy; 2026 Your Brand Name. Not affiliated with any OEM vehicle manufacturer listed.</p>
-    </footer>
 
 </body>
 </html>
