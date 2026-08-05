@@ -1,103 +1,152 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pre-Order Your Custom Car Part</title>
+    <title>Pre-Order | Precision Chassis Engineering</title>
+    <!-- Tailwind CSS -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Google Fonts for StanceWorks Editorial Serif Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        .font-serif-editorial { font-family: 'Cinzel', serif; }
+        .font-sans-editorial { font-family: 'Inter', sans-serif; }
+    </style>
 </head>
-<body class="bg-zinc-950 text-zinc-100 font-sans antialiased">
+<body class="bg-[#0a0a0a] text-zinc-300 font-sans-editorial antialiased selection:bg-zinc-100 selection:text-black">
 
-    <!-- Navbar -->
-    <nav class="border-b border-zinc-800 bg-zinc-900/50 backdrop-blur sticky top-0 z-50">
-        <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
-            <span class="text-xl font-black tracking-wider text-red-500">PROJECT_NAME</span>
-            <a href="#preorder" class="bg-red-600 hover:bg-red-700 text-white font-semibold px-4 py-2 rounded-md text-sm transition">Pre-Order Now</a>
+    <!-- Header Navigation -->
+    <nav class="border-b border-zinc-900 bg-[#0a0a0a]/90 backdrop-blur-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <span class="font-serif-editorial text-xl font-bold tracking-widest text-zinc-100 uppercase">
+                PROJECT // 01
+            </span>
+            <a href="#preorder" class="text-xs font-semibold uppercase tracking-widest text-zinc-100 border border-zinc-700 px-5 py-2.5 hover:bg-zinc-100 hover:text-black transition-all duration-300">
+                Reserve Unit
+            </a>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <header class="max-w-6xl mx-auto px-4 py-16 md:py-24 grid md:grid-cols-2 gap-12 items-center">
-        <div>
-            <span class="text-xs font-bold tracking-widest text-red-500 uppercase">Now Open For Pre-Order</span>
-            <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight mt-2 mb-4">
-                The Ultimate Performance Upgrade for Your Chassis.
-            </h1>
-            <p class="text-zinc-400 text-lg mb-8">
-                Engineered with no compromises. Lightweight, insanely durable, and precision-machined to fix OEM failure points while unlocking maximum performance.
-            </p>
-            <div class="flex flex-col sm:flex-row gap-4">
-                <a href="#preorder" class="bg-red-600 hover:bg-red-700 text-center text-white font-bold px-8 py-4 rounded-md shadow-lg shadow-red-900/20 transition">
-                    Secure Your Part
-                </a>
-                <a href="#specs" class="border border-zinc-700 hover:bg-zinc-900 text-center text-white font-medium px-8 py-4 rounded-md transition">
-                    View Specs
-                </a>
-            </div>
-        </div>
-        <div class="relative bg-zinc-900 border border-zinc-800 rounded-xl aspect-video md:aspect-square flex items-center justify-center overflow-hidden shadow-2xl">
-            <div class="text-center p-6">
-                <p class="text-zinc-600 text-sm uppercase tracking-widest mb-2">[ CAD Render / Prototype Photo ]</p>
-                <p class="text-zinc-500 text-xs">High-resolution 3D preview of the final part</p>
+    <!-- Editorial Hero Section -->
+    <header class="max-w-5xl mx-auto px-6 pt-20 pb-16 text-center">
+        <p class="text-xs uppercase tracking-[0.3em] text-zinc-500 font-semibold mb-4">
+            Bespoke Component Development
+        </p>
+        <h1 class="font-serif-editorial text-4xl sm:text-6xl font-extrabold tracking-tight text-zinc-100 leading-tight mb-6">
+            FUNCTION DRIVEN BY DESIGN.
+        </h1>
+        <p class="max-w-2xl mx-auto text-zinc-400 text-base sm:text-lg leading-relaxed font-light mb-10">
+            Engineered from 6061-T6 Billet Aluminum to eliminate factory tolerances and elevate chassis dynamic response. A limited, numbered batch is now available for pre-order.
+        </p>
+        
+        <!-- Large StanceWorks-style Imagery Placeholder -->
+        <div class="w-full bg-zinc-900 border border-zinc-800 rounded-sm aspect-video overflow-hidden relative shadow-2xl my-12 flex items-center justify-center">
+            <div class="text-center p-8">
+                <p class="font-serif-editorial text-zinc-600 text-sm tracking-widest uppercase mb-2">[ HERO PROTOTYPE PHOTOGRAPHY ]</p>
+                <p class="text-zinc-600 text-xs font-light">Replace with a high-contrast hero photo or CAD rendering</p>
             </div>
         </div>
     </header>
 
-    <!-- Specs Section -->
-    <section id="specs" class="bg-zinc-900 border-y border-zinc-800 py-16">
-        <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-12">
+    <!-- Editorial Feature Article Section -->
+    <section class="border-t border-zinc-900 bg-[#0d0d0d] py-20">
+        <div class="max-w-4xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
             <div>
-                <h2 class="text-2xl font-bold mb-6 text-white flex items-center gap-2">
-                    <span class="w-2 h-6 bg-red-500 inline-block rounded-sm"></span> Vehicle Fitment
-                </h2>
-                <div class="bg-zinc-950 border border-zinc-800 rounded-lg p-6">
-                    <ul class="space-y-3 text-zinc-300">
-                        <li class="flex justify-between border-b border-zinc-800 pb-2">
-                            <strong>Make / Model:</strong> <span>Example Car</span>
-                        </li>
-                        <li class="flex justify-between border-b border-zinc-800 pb-2">
-                            <strong>Years:</strong> <span>2018 - 2026</span>
-                        </li>
-                        <li class="flex justify-between text-amber-400">
-                            <strong>Note:</strong> <span>Fits manual transmissions only.</span>
-                        </li>
-                    </ul>
+                <span class="text-xs uppercase tracking-[0.2em] text-zinc-500 font-semibold">Engineering Notes</span>
+                <h2 class="font-serif-editorial text-2xl font-bold text-zinc-100 mt-2 mb-4">REDEFINING OEM LIMITATIONS.</h2>
+                <p class="text-zinc-400 text-sm leading-relaxed font-light mb-4">
+                    The factory component was built for mass production compliance. Our redesign focuses purely on rigidity, weight optimization, and structural feedback.
+                </p>
+                <p class="text-zinc-400 text-sm leading-relaxed font-light">
+                    Precision CNC-machined with tight tolerance fits, finished in hard-anodized matte black for corrosion resistance and longevity under endurance track conditions.
+                </p>
+            </div>
+            <!-- Secondary Image Frame -->
+            <div class="bg-zinc-900 border border-zinc-800 aspect-square flex items-center justify-center text-center p-6">
+                <p class="font-serif-editorial text-zinc-600 text-xs tracking-widest uppercase">[ DETAIL SPEC PHOTO / CAD CLOSEUP ]</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specifications Table (Minimalist) -->
+    <section class="max-w-4xl mx-auto px-6 py-20">
+        <div class="text-center mb-12">
+            <h2 class="font-serif-editorial text-2xl font-bold text-zinc-100 tracking-wide">TECHNICAL SPECIFICATIONS</h2>
+            <div class="w-12 h-[1px] bg-zinc-700 mx-auto mt-4"></div>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-12 text-sm">
+            <!-- Column 1: Specs -->
+            <div class="space-y-4">
+                <h3 class="font-serif-editorial text-zinc-100 font-bold border-b border-zinc-800 pb-2">COMPONENT SPECS</h3>
+                <div class="flex justify-between py-1 border-b border-zinc-900 text-zinc-400">
+                    <span>Material</span>
+                    <span class="text-zinc-200">6061-T6 Billet Aluminum</span>
+                </div>
+                <div class="flex justify-between py-1 border-b border-zinc-900 text-zinc-400">
+                    <span>Finish</span>
+                    <span class="text-zinc-200">Mil-Spec Hard Anodized</span>
+                </div>
+                <div class="flex justify-between py-1 border-b border-zinc-900 text-zinc-400">
+                    <span>Weight Savings</span>
+                    <span class="text-zinc-200">-1.8 lbs vs OEM</span>
                 </div>
             </div>
-            <div>
-                <h2 class="text-2xl font-bold mb-6 text-white flex items-center gap-2">
-                    <span class="w-2 h-6 bg-red-500 inline-block rounded-sm"></span> Engineering Specs
-                </h2>
-                <div class="bg-zinc-950 border border-zinc-800 rounded-lg p-6">
-                    <ul class="space-y-3 text-zinc-300">
-                        <li class="flex justify-between border-b border-zinc-800 pb-2">
-                            <strong>Material:</strong> <span>6061-T6 Billet Aluminum</span>
-                        </li>
-                        <li class="flex justify-between border-b border-zinc-800 pb-2">
-                            <strong>Weight:</strong> <span>1.8 lbs</span>
-                        </li>
-                    </ul>
+
+            <!-- Column 2: Fitment -->
+            <div class="space-y-4">
+                <h3 class="font-serif-editorial text-zinc-100 font-bold border-b border-zinc-800 pb-2">VEHICLE FITMENT</h3>
+                <div class="flex justify-between py-1 border-b border-zinc-900 text-zinc-400">
+                    <span>Chassis</span>
+                    <span class="text-zinc-200">ZN8 / ZD8</span>
+                </div>
+                <div class="flex justify-between py-1 border-b border-zinc-900 text-zinc-400">
+                    <span>Model Years</span>
+                    <span class="text-zinc-200">2018 - 2026</span>
+                </div>
+                <div class="flex justify-between py-1 border-b border-zinc-900 text-zinc-400">
+                    <span>Transmission</span>
+                    <span class="text-zinc-200">6-Speed Manual Only</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Pricing Card -->
-    <section id="preorder" class="bg-zinc-900 border-t border-zinc-800 py-16 text-center">
-        <div class="max-w-md mx-auto px-4">
-            <div class="bg-zinc-950 border border-zinc-800 rounded-2xl p-8 shadow-xl">
-                <h2 class="text-2xl font-bold mb-2">Batch #1 Pre-Order</h2>
-                <p class="text-zinc-400 text-sm mb-6">Lock in early-bird pricing.</p>
+    <!-- Pre-Order Reservation Block -->
+    <section id="preorder" class="border-t border-zinc-900 bg-[#0d0d0d] py-24 text-center">
+        <div class="max-w-xl mx-auto px-6">
+            <span class="text-xs uppercase tracking-[0.3em] text-zinc-500 font-semibold">Production Batch #01</span>
+            <h2 class="font-serif-editorial text-3xl font-bold text-zinc-100 mt-2 mb-4">RESERVE YOUR ALLOCATION</h2>
+            <p class="text-zinc-400 text-sm font-light mb-8">
+                Batch #1 is limited to 100 units. Pre-order pricing guarantees early access before full retail release.
+            </p>
+
+            <div class="border border-zinc-800 bg-[#0a0a0a] p-8 rounded-sm shadow-2xl">
                 <div class="mb-6">
-                    <span class="text-4xl font-extrabold text-white">$249</span>
+                    <span class="font-serif-editorial text-3xl font-bold text-zinc-100">$249.00</span>
+                    <span class="text-xs text-zinc-500 block mt-1">ESTIMATED SHIP DATE: LATE SUMMER</span>
                 </div>
-                <!-- Insert your Stripe Checkout Link below -->
-                <a href="https://buy.stripe.com/test_bJe9AL2QH00q7FJ9lcgrS02" target="_blank" class="block w-full bg-red-600 hover:bg-red-700 text-white font-bold py-4 rounded-md transition shadow-lg shadow-red-900/30">
-                    Pre-Order via Stripe Checkout
+
+                <!-- STRIPE PAYMENT BUTTON -->
+                <!-- Replace with your working test/live Stripe payment link -->
+                <a href="https://buy.stripe.com/test_bJe9AL2QH00q7FJ9lcgrS02" target="_blank" class="block w-full bg-zinc-100 hover:bg-white text-black font-semibold text-xs tracking-[0.2em] uppercase py-4 transition-all duration-300">
+                    Pre-Order Now
                 </a>
+
+                <p class="text-[10px] text-zinc-600 uppercase tracking-widest mt-4">
+                    Fully refundable prior to production fulfillment.
+                </p>
             </div>
         </div>
     </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-zinc-900 py-10 text-center text-zinc-600 text-xs font-light">
+        <p class="font-serif-editorial tracking-widest uppercase mb-2">PROJECT // 01</p>
+        <p>&copy; 2026 All Rights Reserved.</p>
+    </footer>
 
 </body>
 </html>
